@@ -25,11 +25,11 @@
 	}
 		
 		// 로그인 성공 처리 (세션에 아이디 값 올리기))
-	if(cid.equals("tiger") && cpw.equals("12345")); {
-		session.setAttribute("user", cid);
-		out.println = ("님 자동 로그인 완료");
+	if (cid.equals("tiger") && cpw.equals("12345")) {
+	    session.setAttribute("user", cid);
+	    out.println(cid + "님 자동 로그인 완료");
 	} else {
-		response.sendRedirect("login.jsp");
+	    response.sendRedirect("login.jsp");
 	}
 	%>
 </body>
